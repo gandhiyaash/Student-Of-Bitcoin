@@ -58,23 +58,25 @@ export function Navigation() {
                     <Menu className="w-6 h-6" />
                   </button>
                 </SheetTrigger>
-                <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-                  <SheetHeader>
+                <SheetContent side="right" className="w-[300px] sm:w-[400px] border-l-0 bg-white/95 backdrop-blur-xl flex flex-col p-8">
+                  <SheetHeader className="mb-8 pt-2">
                     <SheetTitle className="text-left">
-                      <img src={sobLogo} alt="Student of Bitcoin" className="h-8 object-contain" />
+                      <img src={sobLogo} alt="Student of Bitcoin" className="h-10 object-contain" />
                     </SheetTitle>
                   </SheetHeader>
-                  <div className="flex flex-col gap-6 mt-10">
+                  <div className="flex flex-col gap-6">
                     {navLinks.map((link, i) => (
                       <a 
                         key={i}
                         href={`#${link.toLowerCase().replace(' ', '-')}`} 
-                        className="text-lg font-medium text-gray-600 hover:text-[#417C5E] transition-colors"
+                        className="text-xl font-medium text-gray-900 hover:text-[#417C5E] transition-colors py-2 border-b border-gray-50 last:border-0"
                       >
                         {link}
                       </a>
                     ))}
-                    <button className="mt-4 w-full px-6 py-3 bg-[#417C5E] text-white font-medium rounded-xl hover:bg-[#366851] shadow-md shadow-[#417C5E]/20 transition-all duration-300 text-center">
+                  </div>
+                  <div className="mt-auto pt-8">
+                    <button className="w-full px-6 py-4 bg-[#417C5E] text-white font-semibold rounded-2xl hover:bg-[#366851] shadow-lg shadow-[#417C5E]/20 transition-all duration-300 text-lg">
                       Speak with Us
                     </button>
                   </div>
