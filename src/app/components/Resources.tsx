@@ -26,7 +26,7 @@ export function Resources() {
           <div className="lg:col-span-6 mt-12 lg:mt-0">
             <div className="relative h-full min-h-[400px] flex items-center">
               {/* Back Image */}
-              <div className="absolute right-0 top-0 w-4/5 transform translate-y-8 hover:z-30 transition-all duration-500 group">
+              <div className="absolute right-0 top-0 w-4/5 transform translate-y-8 z-10 hover:z-30 transition-all duration-300 group">
                 <div className="rounded-2xl overflow-hidden shadow-2xl isolate ring-1 ring-black/5 bg-white">
                   <LazyImage
                     src={businessBook}
@@ -34,13 +34,13 @@ export function Resources() {
                     width={1600}
                     height={1066}
                     wrapperClassName="w-full"
-                    className="w-full h-auto rounded-2xl transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                    className="w-full h-auto rounded-2xl transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
               </div>
               
               {/* Front Image */}
-              <div className="absolute left-0 bottom-0 w-3/4 transform -translate-y-8 hover:z-30 transition-all duration-500 group z-20">
+              <div className="absolute left-0 bottom-0 w-3/4 transform -translate-y-8 z-20 hover:z-30 transition-all duration-300 group">
                 <div className="rounded-2xl overflow-hidden shadow-2xl isolate ring-4 ring-white bg-white">
                   <LazyImage
                     src={beginnersBook}
@@ -48,7 +48,7 @@ export function Resources() {
                     width={1600}
                     height={1068}
                     wrapperClassName="w-full"
-                    className="w-full h-auto rounded-2xl transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                    className="w-full h-auto rounded-2xl transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
               </div>

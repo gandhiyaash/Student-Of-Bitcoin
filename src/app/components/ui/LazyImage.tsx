@@ -10,7 +10,7 @@ export function LazyImage({ className = '', wrapperClassName = '', onLoad, ...pr
   return (
     <div className={`relative overflow-hidden ${wrapperClassName}`}>
       <div
-        className={`absolute inset-0 bg-gradient-to-r from-gray-100 via-gray-200 to-gray-100 animate-pulse transition-opacity duration-300 ${
+        className={`absolute inset-0 bg-gray-100 transition-opacity duration-300 ${
           loaded ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
       />

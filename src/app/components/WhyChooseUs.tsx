@@ -91,7 +91,7 @@ export function WhyChooseUs() {
                 <img 
                   src={speakerImage} 
                   alt="Speaker presenting"
-                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover transition-transform duration-700"
                 />
               </div>
             </div>

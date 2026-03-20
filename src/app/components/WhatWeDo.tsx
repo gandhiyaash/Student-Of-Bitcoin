@@ -75,7 +75,7 @@ export function WhatWeDo() {
           <div className="flex w-max items-center gap-16 md:gap-32 pr-16 md:pr-32 animate-infinite-scroll">
             {/* Double the partners array to create seamless loop */}
             {[...partners, ...partners].map((partner, i) => (
-              <div key={i} className="flex items-center justify-center h-24 flex-shrink-0 min-w-[160px] md:min-w-[200px] transform hover:scale-110 transition-transform duration-300">
+              <div key={i} className="flex items-center justify-center h-24 flex-shrink-0 min-w-[160px] md:min-w-[200px] transition-transform duration-300">
                 {partner.logo ? (
                   <img src={partner.logo} alt={`${partner.name} logo`} className={`max-h-16 md:max-h-20 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity ${partner.customClass || ''}`} />
                 ) : (

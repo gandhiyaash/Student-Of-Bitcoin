@@ -37,13 +37,14 @@ export function Hero() {
 
           {/* Right Column - Visual */}
           <motion.div 
-            initial={{ opacity: 0, scale: 0.98 }}
-            animate={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             className="lg:col-span-6"
           >
-            <div className="relative w-full h-full flex items-center justify-center">
-              <div className="relative z-10 w-full transform-gpu">
+            <div className="relative w-full h-full flex items-center justify-center group">
+              <div className="relative z-10 w-full transform-gpu transition-transform duration-500 group-hover:scale-[1.02]">
                 <img 
                   src={heroImg} 
                   alt="Student of Bitcoin Hero visual" 

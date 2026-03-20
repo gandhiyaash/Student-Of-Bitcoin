@@ -91,7 +91,7 @@ export function FinalCTA() {
                   width={1600}
                   height={2133}
                   wrapperClassName="w-full h-full bg-[#2A2D35]"
-                  className="w-full h-full object-cover transform scale-[1.01] group-hover:scale-[1.05] transition-transform duration-1000 ease-out"
+                  className="w-full h-full object-cover transition-transform duration-1000 ease-out"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-[#2A2D35] to-transparent w-32 hidden lg:block" />
               </div>
