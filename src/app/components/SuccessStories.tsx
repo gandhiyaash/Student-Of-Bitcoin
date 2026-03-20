@@ -83,7 +83,7 @@ export function SuccessStories() {
                       width={1200}
                       height={1600}
                       wrapperClassName="w-full h-full bg-gray-100"
-                      className="w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 transition-all duration-700 group-hover:scale-105"
+                      className="w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 transition-all duration-700 group-hover:scale-[1.02] [image-rendering:auto] [backface-visibility:hidden] transform-gpu"
                     />
                   </div>
                 )}

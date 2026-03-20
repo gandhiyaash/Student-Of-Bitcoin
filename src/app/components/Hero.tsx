@@ -37,17 +37,13 @@ export function Hero() {
 
           {/* Right Column - Visual */}
           <motion.div 
-            initial={{ opacity: 0, scale: 0.95 }}
+            initial={{ opacity: 0, scale: 0.98 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             className="lg:col-span-6"
           >
             <div className="relative w-full h-full flex items-center justify-center">
-              <motion.div 
-                animate={{ y: [0, -12, 0] }}
-                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                className="relative z-10 w-full"
-              >
+              <div className="relative z-10 w-full transform-gpu">
                 <img 
                   src={heroImg} 
                   alt="Student of Bitcoin Hero visual" 
@@ -55,9 +51,9 @@ export function Hero() {
                   height={1068}
                   fetchPriority="high"
                   decoding="async"
-                  className="w-full h-auto rounded-[2rem] shadow-2xl ring-1 ring-gray-900/5 object-cover" 
+                  className="w-full h-auto rounded-[2rem] shadow-2xl ring-1 ring-gray-900/5 object-cover [image-rendering:auto] [backface-visibility:hidden]" 
                 />
-              </motion.div>
+              </div>
               {/* Optional ambient glow */}
               <div className="absolute inset-0 bg-gradient-to-tr from-[#417C5E]/20 to-transparent blur-3xl -z-10 rounded-full scale-90"></div>
             </div>
